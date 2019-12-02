@@ -8,6 +8,13 @@ let fuelsum=0
 for (let mass of list) {
 	console.log(mass)
 	let fuel=Math.floor(mass/3)-2
+    while (fuel >= 0) {
+		fuelsum=fuelsum+fuel
+    	fuel = Math.floor(fuel/3)-2
+    }
 	console.log("fuel", fuel)
-	fuelsum=fuelsum+fuel
-}console.log(fuelsum)
+}
+
+console.log(fuelsum)
+
+
